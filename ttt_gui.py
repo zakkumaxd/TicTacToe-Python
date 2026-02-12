@@ -1,4 +1,3 @@
-# STILL THE SAME LOGIC, GUI NOT YET APPLIED
 from re import L
 import tkinter as tk
 
@@ -43,10 +42,6 @@ buttons = []
 frame = tk.Frame(root)
 frame.pack()
 
-
-
-
-
 def btn_click(row, col):
     global player, reset_btn
     if board[row][col] != ' ':
@@ -60,15 +55,11 @@ def btn_click(row, col):
         disable_all()
         reset_btn = tk.Button(root, text="New Game", font=("Arial", 20), command=reset)
         reset_btn.pack()
-
-
     elif draw_check():
         status.config(text='Draw!')
         disable_all()
         reset_btn = tk.Button(root, text="New Game", font=("Arial", 20), command=reset)
         reset_btn.pack()
-
-        
     else: 
         if player == 'X':
             player = 'O'
@@ -103,6 +94,4 @@ for row in range(len(board)):
         row_btn.append(btn)
     buttons.append(row_btn)
     
-
-
 root.mainloop()
