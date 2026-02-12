@@ -1,1 +1,2 @@
-# Tic Tac Toe Activity with GUI using Tkinter and NON-GUI using terminal only
+# Tic Tac Toe Project 
+## Built in Python using Tkinter for GUI and used Terminal/CMD only for non-GUI or Console
